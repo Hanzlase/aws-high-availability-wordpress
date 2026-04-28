@@ -196,7 +196,7 @@ An **RDS Read Replica** was created to split the database workload:
 *Software Engineering Student · Cloud & DevOps Enthusiast*
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hanzlase)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fdevicons%2Fdevicon%2Fmaster%2Ficons%2Flinkedin%2Flinkedin-original.svg)](https://www.linkedin.com/in/hanzlase/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fdevicons%2Fdevicon%2Fmaster%2Ficons%2Flinkedin%2Flinkedin-original.svg)](https://www.linkedin.com/in/hanzlasheikh)
 [![AWS](https://img.shields.io/badge/Cloud_Practitioner-FF9900?style=for-the-badge&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fdevicons%2Fdevicon%2Fmaster%2Ficons%2Famazonwebservices%2Famazonwebservices-original-wordmark.svg)](https://aws.amazon.com/certification/certified-cloud-practitioner/)
 
 </div>
