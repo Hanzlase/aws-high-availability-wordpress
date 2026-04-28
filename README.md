@@ -1,16 +1,16 @@
 <div align="center">
 
-<img src="https://cdn.simpleicons.org/amazonaws/FF9900" width="72" alt="AWS Logo" />
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="72" alt="AWS Logo" />
 
 # Highly Available WordPress on AWS
 
 ### Production-grade, fault-tolerant, and auto-scaling WordPress infrastructure
 
-[![AWS](https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=FF9900)](https://aws.amazon.com/)
+[![AWS](https://img.shields.io/badge/Amazon_AWS-232F3E?style=for-the-badge&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fdevicons%2Fdevicon%2Fmaster%2Ficons%2Famazonwebservices%2Famazonwebservices-original-wordmark.svg)](https://aws.amazon.com/)
 [![WordPress](https://img.shields.io/badge/WordPress-21759B?style=for-the-badge&logo=wordpress&logoColor=white)](https://wordpress.org/)
 [![Apache](https://img.shields.io/badge/Apache-D22128?style=for-the-badge&logo=apache&logoColor=white)](https://httpd.apache.org/)
 [![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
-[![Amazon Linux](https://img.shields.io/badge/Amazon_Linux_2023-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/linux/)
+[![Amazon Linux](https://img.shields.io/badge/Amazon_Linux_2023-FF9900?style=for-the-badge&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fdevicons%2Fdevicon%2Fmaster%2Ficons%2Famazonwebservices%2Famazonwebservices-original-wordmark.svg)](https://aws.amazon.com/linux/)
 
 </div>
 
@@ -64,18 +64,18 @@ Internet Users
 
 | Icon | Service | Role |
 |------|---------|------|
-| <img src="https://cdn.simpleicons.org/amazonaws/FF9900" width="18" /> | **Amazon CloudFront** | Global CDN — edge caching & reduced latency |
-| <img src="https://cdn.simpleicons.org/awselasticloadbalancing/8C4FFF" width="18" /> | **Application Load Balancer (ALB)** | Distributes traffic across healthy EC2 instances |
-| <img src="https://cdn.simpleicons.org/amazonec2/FF9900" width="18" /> | **Auto Scaling Group (ASG)** | Dynamically manages EC2 fleet via Golden AMI |
-| <img src="https://cdn.simpleicons.org/amazonrds/527FFF" width="18" /> | **Amazon RDS (MySQL)** | Primary DB + Read Replica for resilience |
-| <img src="https://cdn.simpleicons.org/amazons3/569A31" width="18" /> | **Amazon S3** | Static asset storage |
-| <img src="https://cdn.simpleicons.org/amazonaws/FF9900" width="18" /> | **Security Groups** | Layered ALB → ASG → RDS least-privilege model |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="18" /> | **Amazon CloudFront** | Global CDN — edge caching & reduced latency |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="18" /> | **Application Load Balancer (ALB)** | Distributes traffic across healthy EC2 instances |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="18" /> | **Auto Scaling Group (ASG)** | Dynamically manages EC2 fleet via Golden AMI |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="18" /> | **Amazon RDS (MySQL)** | Primary DB + Read Replica for resilience |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="18" /> | **Amazon S3** | Static asset storage |
+| <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="18" /> | **Security Groups** | Layered ALB → ASG → RDS least-privilege model |
 
 ---
 
 ## <img src="https://cdn.simpleicons.org/rocket/4A90D9" width="22" alt="Phases" /> Implementation Phases
 
-### <img src="https://cdn.simpleicons.org/amazonec2/FF9900" width="18" /> Phase 0 — Baseline Infrastructure
+### <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="18" /> Phase 0 — Baseline Infrastructure
 
 The initial environment consists of a primary EC2 instance running the **LAMP stack** (Linux, Apache, MySQL, PHP) connected to a managed Amazon RDS instance.
 
@@ -84,7 +84,7 @@ The initial environment consists of a primary EC2 instance running the **LAMP st
 
 ---
 
-### <img src="https://cdn.simpleicons.org/amazonec2/FF9900" width="18" /> Phase 1 — The "Golden Image" (AMI)
+### <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="18" /> Phase 1 — The "Golden Image" (AMI)
 
 To support rapid scaling, a custom **Amazon Machine Image (AMI)** was created from the fully configured web server. This image contains:
 
@@ -96,7 +96,7 @@ The AMI serves as a **master template** for all instances launched by the Auto S
 
 ---
 
-### <img src="https://cdn.simpleicons.org/awselasticloadbalancing/8C4FFF" width="18" /> Phase 2 — Traffic Distribution (ALB)
+### <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="18" /> Phase 2 — Traffic Distribution (ALB)
 
 An **internet-facing Application Load Balancer** was deployed as the single entry point for users.
 
@@ -108,7 +108,7 @@ An **internet-facing Application Load Balancer** was deployed as the single entr
 
 ---
 
-### <img src="https://cdn.simpleicons.org/awsautoscaling/FF9900" width="18" /> Phase 3 — High Availability & Auto Scaling
+### <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="18" /> Phase 3 — High Availability & Auto Scaling
 
 The **Auto Scaling Group (ASG)** ensures the application handles varying loads elastically.
 
@@ -131,7 +131,7 @@ sudo service httpd restart
 
 ---
 
-### <img src="https://cdn.simpleicons.org/amazonaws/FF9900" width="18" /> Phase 4 — Global Acceleration (CloudFront)
+### <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="18" /> Phase 4 — Global Acceleration (CloudFront)
 
 A **CloudFront distribution** was integrated to serve as the edge/CDN layer.
 
@@ -145,7 +145,7 @@ A **CloudFront distribution** was integrated to serve as the edge/CDN layer.
 
 ---
 
-### <img src="https://cdn.simpleicons.org/amazonrds/527FFF" width="18" /> Phase 5 — Database Fault Tolerance (RDS Read Replica)
+### <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="18" /> Phase 5 — Database Fault Tolerance (RDS Read Replica)
 
 An **RDS Read Replica** was created to split the database workload:
 
@@ -159,18 +159,18 @@ An **RDS Read Replica** was created to split the database workload:
 
 <div align="center">
 
-[![AWS EC2](https://img.shields.io/badge/EC2-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/ec2/)
-[![AWS RDS](https://img.shields.io/badge/RDS-527FFF?style=for-the-badge&logo=amazon-rds&logoColor=white)](https://aws.amazon.com/rds/)
-[![AWS ALB](https://img.shields.io/badge/ALB-8C4FFF?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/elasticloadbalancing/)
-[![AWS CloudFront](https://img.shields.io/badge/CloudFront-FF9900?style=for-the-badge&logo=amazon-cloudfront&logoColor=white)](https://aws.amazon.com/cloudfront/)
-[![AWS ASG](https://img.shields.io/badge/Auto_Scaling-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/autoscaling/)
-[![AWS S3](https://img.shields.io/badge/S3-569A31?style=for-the-badge&logo=amazon-s3&logoColor=white)](https://aws.amazon.com/s3/)
+[![AWS EC2](https://img.shields.io/badge/EC2-FF9900?style=for-the-badge&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fdevicons%2Fdevicon%2Fmaster%2Ficons%2Famazonwebservices%2Famazonwebservices-original-wordmark.svg)](https://aws.amazon.com/ec2/)
+[![AWS RDS](https://img.shields.io/badge/RDS-527FFF?style=for-the-badge&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fdevicons%2Fdevicon%2Fmaster%2Ficons%2Famazonwebservices%2Famazonwebservices-original-wordmark.svg)](https://aws.amazon.com/rds/)
+[![AWS ALB](https://img.shields.io/badge/ALB-8C4FFF?style=for-the-badge&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fdevicons%2Fdevicon%2Fmaster%2Ficons%2Famazonwebservices%2Famazonwebservices-original-wordmark.svg)](https://aws.amazon.com/elasticloadbalancing/)
+[![AWS CloudFront](https://img.shields.io/badge/CloudFront-FF9900?style=for-the-badge&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fdevicons%2Fdevicon%2Fmaster%2Ficons%2Famazonwebservices%2Famazonwebservices-original-wordmark.svg)](https://aws.amazon.com/cloudfront/)
+[![AWS ASG](https://img.shields.io/badge/Auto_Scaling-FF9900?style=for-the-badge&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fdevicons%2Fdevicon%2Fmaster%2Ficons%2Famazonwebservices%2Famazonwebservices-original-wordmark.svg)](https://aws.amazon.com/autoscaling/)
+[![AWS S3](https://img.shields.io/badge/S3-569A31?style=for-the-badge&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fdevicons%2Fdevicon%2Fmaster%2Ficons%2Famazonwebservices%2Famazonwebservices-original-wordmark.svg)](https://aws.amazon.com/s3/)
 
 [![WordPress](https://img.shields.io/badge/WordPress-21759B?style=for-the-badge&logo=wordpress&logoColor=white)](https://wordpress.org/)
 [![Apache](https://img.shields.io/badge/Apache-D22128?style=for-the-badge&logo=apache&logoColor=white)](https://httpd.apache.org/)
 [![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
 [![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://www.php.net/)
-[![Amazon Linux](https://img.shields.io/badge/Amazon_Linux_2023-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=FF9900)](https://aws.amazon.com/linux/)
+[![Amazon Linux](https://img.shields.io/badge/Amazon_Linux_2023-232F3E?style=for-the-badge&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fdevicons%2Fdevicon%2Fmaster%2Ficons%2Famazonwebservices%2Famazonwebservices-original-wordmark.svg)](https://aws.amazon.com/linux/)
 
 </div>
 
@@ -196,8 +196,8 @@ An **RDS Read Replica** was created to split the database workload:
 *Software Engineering Student · Cloud & DevOps Enthusiast*
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hanzlase)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hanzlase/)
-[![AWS](https://img.shields.io/badge/Cloud_Practitioner-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/certification/certified-cloud-practitioner/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fdevicons%2Fdevicon%2Fmaster%2Ficons%2Flinkedin%2Flinkedin-original.svg)](https://www.linkedin.com/in/hanzlase/)
+[![AWS](https://img.shields.io/badge/Cloud_Practitioner-FF9900?style=for-the-badge&logo=https%3A%2F%2Fraw.githubusercontent.com%2Fdevicons%2Fdevicon%2Fmaster%2Ficons%2Famazonwebservices%2Famazonwebservices-original-wordmark.svg)](https://aws.amazon.com/certification/certified-cloud-practitioner/)
 
 </div>
 
@@ -205,6 +205,6 @@ An **RDS Read Replica** was created to split the database workload:
 
 <div align="center">
 
-<sub>Built with <img src="https://cdn.simpleicons.org/amazonaws/FF9900" width="12" /> AWS · Documented for learning & portfolio purposes</sub>
+<sub>Built with <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="12" /> AWS · Documented for learning & portfolio purposes</sub>
 
 </div>
